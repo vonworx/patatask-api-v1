@@ -17,6 +17,9 @@
     "address": {
       "type": "string"
     },
+	"secretkey":{
+	  "type": "string"
+	},
     "balance": {
       "type": "number",
       "default": 0
