@@ -1,0 +1,39 @@
+{
+  "name": "Freq",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "userid": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "friendid": {
+      "type": "number",
+      "required": true
+    },
+    "viewed": {
+      "type": "number",
+      "default": 0
+    },
+    "requestDate": {
+      "type": "date",
+      "defaultFn": "now"
+    },
+    "accepted": {
+      "type": "number",
+      "default": 0
+    },
+    "ignored": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

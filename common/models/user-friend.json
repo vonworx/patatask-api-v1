@@ -1,0 +1,30 @@
+{
+  "name": "UserFriend",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "userid": {
+      "type": "number",
+      "default": 0
+    },
+    "friendid": {
+      "type": "number",
+      "default": 0
+    },
+    "blocked": {
+      "type": "number",
+      "default": 0
+    },
+    "dateadded": {
+      "type": "date",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

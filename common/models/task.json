@@ -1,0 +1,57 @@
+{
+  "name": "Task",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "taskname": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "deadline": {
+      "type": "date"
+    },
+    "amount": {
+      "type": "number",
+      "default": 0
+    },
+    "owner": {
+      "type": "number",
+      "default": 0
+    },
+    "public": {
+      "type": "number",
+      "default": 0
+    },
+    "assignee": {
+      "type": "number",
+      "default": 0
+    },
+    "completed": {
+      "type": "number",
+      "default": 0
+    },
+    "file": {
+      "type": "string"
+    },
+    "created": {
+      "type": "date",
+      "defaultFn": "now"
+    },
+    "modified": {
+      "type": "date"
+    },
+    "approved": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
